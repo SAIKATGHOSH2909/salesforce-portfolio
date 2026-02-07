@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Portfolio - Setup Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(30, 41, 59, 0.8);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            color: #6366f1;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #818cf8;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        .status {
+            background: rgba(239, 68, 68, 0.2);
+            border: 2px solid #ef4444;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .status.success {
+            background: rgba(34, 197, 94, 0.2);
+            border-color: #22c55e;
+        }
+        .step {
+            background: rgba(51, 65, 85, 0.5);
+            border-left: 4px solid #6366f1;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .step-number {
+            display: inline-block;
+            background: #6366f1;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #fbbf24;
+        }
+        .code-block {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .code-block code {
+            background: none;
+            padding: 0;
+            color: #e2e8f0;
+        }
+        a {
+            color: #818cf8;
+            text-decoration: none;
+            border-bottom: 1px solid #818cf8;
+        }
+        a:hover {
+            color: #a5b4fc;
+            border-bottom-color: #a5b4fc;
+        }
+        .button {
+            display: inline-block;
+            background: #6366f1;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            margin: 10px 10px 10px 0;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #4f46e5;
+        }
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Salesforce Portfolio</h1>
+        <p style="font-size: 1.2em; margin-bottom: 30px; color: #94a3b8;">
+            Your enterprise-grade portfolio is ready! Follow these steps to get it running.
+        </p>
+
+        <div class="status">
+            <strong>⚠️ Action Required:</strong> Node.js is not currently installed on your system.
+        </div>
+
+        <h2>📥 Step 1: Install Node.js</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Download Node.js</strong>
+            <p style="margin-top: 10px;">
+                Visit <a href="https://nodejs.org/" target="_blank">nodejs.org</a> and download the <strong>LTS (Long Term Support)</strong> version.
+            </p>
+            <a href="https://nodejs.org/" target="_blank" class="button">Download Node.js →</a>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Install Node.js</strong>
+            <p style="margin-top: 10px;">
+                Run the installer and follow the setup wizard. Make sure to check "Add to PATH" during installation.
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>Restart Your Terminal/IDE</strong>
+            <p style="margin-top: 10px;">
+                Close and reopen Cursor (or your terminal) after installation so it can detect Node.js.
+            </p>
+        </div>
+
+        <h2>⚡ Step 2: Start the Portfolio</h2>
+        <div class="step">
+            <span class="step-number">4</span>
+            <strong>Run the Startup Script</strong>
+            <p style="margin-top: 10px;">In PowerShell, run:</p>
+            <div class="code-block">
+                <code>.\start.ps1</code>
+            </div>
+            <p style="margin-top: 10px;">Or in Command Prompt:</p>
+            <div class="code-block">
+                <code>start.bat</code>
+            </div>
+        </div>
+
+        <div class="step">
+            <span class="step-number">5</span>
+            <strong>Or Run Manually</strong>
+            <div class="code-block">
+                <code>npm install</code><br>
+                <code>npm run dev</code>
+            </div>
+        </div>
+
+        <h2>🌐 Step 3: View Your Portfolio</h2>
+        <div class="step">
+            <p>Once the server starts, your portfolio will be available at:</p>
+            <div class="code-block">
+                <code>http://localhost:3000</code>
+            </div>
+            <p style="margin-top: 10px;">It should open automatically in your browser!</p>
+        </div>
+
+        <h2>✨ What's Included</h2>
+        <ul>
+            <li>✅ Enterprise-grade design with smooth animations</li>
+            <li>✅ Hero section with animated gradient background</li>
+            <li>✅ About, Skills, Experience, Projects sections</li>
+            <li>✅ Architecture & Best Practices showcase</li>
+            <li>✅ Contact form with validation</li>
+            <li>✅ Fully responsive (mobile, tablet, desktop)</li>
+            <li>✅ SEO optimized with structured data</li>
+            <li>✅ Dark mode enterprise theme</li>
+        </ul>
+
+        <h2>📝 Next Steps</h2>
+        <div class="step">
+            <p><strong>After getting it running:</strong></p>
+            <ol style="margin-left: 20px; margin-top: 10px;">
+                <li>Customize your information (see <code>CUSTOMIZATION.md</code>)</li>
+                <li>Replace <code>public/resume.pdf</code> with your resume</li>
+                <li>Update social links in <code>lib/constants.ts</code></li>
+                <li>Deploy to Vercel or your preferred platform</li>
+            </ol>
+        </div>
+
+        <div class="status success" style="margin-top: 30px;">
+            <strong>✅ Portfolio is Ready!</strong><br>
+            Once Node.js is installed, you're just one command away from seeing your portfolio live.
+        </div>
+    </div>
+</body>
+</html>
