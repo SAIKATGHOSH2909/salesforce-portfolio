@@ -2,6 +2,12 @@
 
 An enterprise-grade, animated portfolio website for Salesforce Developers and Consultants built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
+## 🌐 Live Website
+
+**🔗 [View Live Site](https://salesforce-portfolio.vercel.app)** *(Deploy on Vercel to get your live link)*
+
+**Repository:** https://github.com/SAIKATGHOSH2909/salesforce-portfolio
+
 ## Features
 
 - **Enterprise Design**: Professional, premium look inspired by SaaS dashboards (Salesforce, Stripe, Linear)
